@@ -18,6 +18,25 @@ usuario - jogador2 / senha - Test12345_
 - Documentacao da API<br />
  http://localhost:8080/swagger-ui/index.html?configUrl=/rest-api-docs/swagger-config#/Autenticacao/login
 
+
+## Como jogar
+
+Apos o login, enviar uma requisicao com o par de filmes em Ingles para o endpoint abaixo.
+A aplicacao fará a consulta dos filmes no imdb caso existam e apresentará as opcoes para fazer o palpite.
+
+![image](https://user-images.githubusercontent.com/20559926/153605442-12f6c7d6-cda7-4533-b61b-5bc9f77015c0.png)
+
+
+No proximo passo o usuario, deve enviar a requisicao para o endpoint abaixo, contendo seu nome e o numero do filme escolhido de acordo com as opcoes
+A aplicação irá responder se o usuário acertou ou não. O usuário tem direito de errar apenas 3 vezes.
+Por motivos de testes todas as rodadas estao com numero maximo de 3 tentivas por partida.
+
+![image](https://user-images.githubusercontent.com/20559926/153605853-c455a3ee-2fbd-4c32-9387-42ed020b86aa.png)
+
+
+
+
+
 ## Descrição
 Crie uma API REST para uma aplicação ao estilo card game, onde serão informados dois
 filmes e o jogador deve acertar aquele que possui melhor avaliação no IMDB.
